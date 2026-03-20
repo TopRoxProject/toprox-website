@@ -94,17 +94,17 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="stat">
-            <span className="stat-num">100%</span>
-            <span className="stat-label">Conformitate GDPR</span>
+            <span className="stat-num">#1</span>
+            <span className="stat-label">Expertiza GIS in Romania/Certificare Internationala GISP</span>
           </div>
           <div className="stat-divider" />
           <div className="stat">
-            <span className="stat-num">24/7</span>
-            <span className="stat-label">Suport tehnic</span>
+            <span className="stat-num">Top5%</span>
+            <span className="stat-label">Planuri Strategice</span>
           </div>
           <div className="stat-divider" />
           <div className="stat">
-            <span className="stat-num">25+</span>
+            <span className="stat-num">28+</span>
             <span className="stat-label">Ani experiență</span>
           </div>
         </div>
