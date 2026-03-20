@@ -4,8 +4,6 @@ import './Contact.css';
 const subjects = [
   'Audit GDPR',
   'Dezvoltare Software',
-  'Securitate IT',
-  'Infrastructură & Cloud',
   'Consultanță Strategică',
   'Suport Tehnic',
   'Altele',
