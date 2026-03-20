@@ -49,7 +49,6 @@ export default function Contact() {
           </h2>
           <p className="contact-desc">
             Spune-ne cu ce te putem ajuta și te contactăm în maximum 24 de ore.
-            Prima consultație este gratuită.
           </p>
 
           <div className="contact-info">
