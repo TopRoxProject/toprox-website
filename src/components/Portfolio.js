@@ -31,12 +31,9 @@ const projects = [
     tag: 'Consulting',
     color: 'red',
     year: '2026',
-    desc: 'Cursuri GIS pe diferite nivele de competențe.',
+    desc: 'Cursuri GIS pe diferite nivele de competențe',
     tech: ['Curs Online de GIS'],
     highlights: ['GIS', 'Analiză Geospațială', 'Hărți digitale'],
-  },
-  {
-    
   },
 ];
 
