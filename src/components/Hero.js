@@ -95,7 +95,7 @@ export default function Hero() {
         <div className="hero-stats">
           <div className="stat">
             <span className="stat-num">#1</span>
-            <span className="stat-label">Expertiza GIS in Romania/Certificare Internationala GISP</span>
+            <span className="stat-label">EXPERTIZA GIS IN ROMANIA /<br />CERTIFICARE INTERNATIONALA GISP</span>
           </div>
           <div className="stat-divider" />
           <div className="stat">
