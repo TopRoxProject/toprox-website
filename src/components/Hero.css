@@ -178,7 +178,7 @@
 
 .hero-scroll-hint {
   position: absolute;
-  bottom: 32px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -187,25 +187,28 @@
   gap: 8px;
   z-index: 2;
   animation: fadeUp 1.5s ease 0.5s both;
+  pointer-events: none;
 }
 
 .hero-scroll-hint span {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text-muted);
+  opacity: 0.5;
 }
 
 .scroll-line {
   width: 1px;
-  height: 40px;
+  height: 32px;
   background: linear-gradient(to bottom, var(--text-muted), transparent);
   animation: scrollPulse 2s ease infinite;
+  opacity: 0.4;
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50% { opacity: 1; transform: scaleY(1.2); }
+  0%, 100% { opacity: 0.2; transform: scaleY(1); }
+  50% { opacity: 0.5; transform: scaleY(1.2); }
 }
 
 .hide-mobile {
@@ -221,5 +224,8 @@
   }
   .stat {
     min-width: 80px;
+  }
+  .hero-scroll-hint {
+    display: none;
   }
 }
