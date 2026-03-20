@@ -84,8 +84,8 @@ export default function Hero() {
           pentru afacerea ta
         </h1>
         <p className="hero-sub">
-          De la conformitate GDPR și audit de securitate,<br className="hide-mobile" />
-          până la software personalizat și suport tehnic continuu.
+          De la conformitate GDPR,<br className="hide-mobile" />
+          până la cursuri de GIS, PM; Negociere.
         </p>
         <div className="hero-actions">
           <a href="#services" className="btn-primary">Descoperă serviciile</a>
@@ -104,7 +104,7 @@ export default function Hero() {
           </div>
           <div className="stat-divider" />
           <div className="stat">
-            <span className="stat-num">5+</span>
+            <span className="stat-num">25+</span>
             <span className="stat-label">Ani experiență</span>
           </div>
         </div>

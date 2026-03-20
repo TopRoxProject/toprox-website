@@ -5,7 +5,7 @@ const values = [
   { icon: '🛡️', title: 'Integritate', desc: 'Lucrăm transparent, fără costuri ascunse și fără compromisuri.' },
   { icon: '⚡', title: 'Rapiditate', desc: 'Livrăm soluții eficiente, respectând termenele agreate.' },
   { icon: '🔒', title: 'Securitate', desc: 'Datele tale sunt protejate conform standardelor GDPR și ISO.' },
-  { icon: '🤝', title: 'Parteneriat', desc: 'Suntem alături de tine pe termen lung, nu doar la proiect.' },
+  { icon: '🤝', title: 'Parteneriat', desc: 'Suntem alături de tine pe termen lung, nu doar peparcursul proiectului.' },
 ];
 
 export default function About() {
@@ -20,8 +20,7 @@ export default function About() {
           </h2>
           <p className="about-text">
             <strong>TopRox Project SRL</strong> este o firmă de consultanță IT cu sediul în Sibiu, România.
-            Ne specializăm în implementarea de soluții software personalizate, audit de securitate informatică
-            și conformitate GDPR pentru firme de toate dimensiunile.
+            Avem expertiză în implementarea de soluții GIS, Consultanta IT, Cursuri de Project Management, Negociere, soluții software.
           </p>
           <p className="about-text">
             Echipa noastră combină experiența tehnică profundă cu o înțelegere clară a nevoilor de business,
@@ -30,18 +29,18 @@ export default function About() {
           <div className="about-highlights">
             <div className="highlight">
               <span className="highlight-dot red" />
-              Certificați în reglementări GDPR (2016/679), Legea 190/2018
+              Certificați international în GIS (GISP)
             </div>
             <div className="highlight">
               <span className="highlight-dot blue" />
-              Aplicații desktop și web dezvoltate intern
+              Aplicații desktop/server de scanare/audit GDPR
             </div>
             <div className="highlight">
               <span className="highlight-dot red" />
               Suport tehnic continuu, personalizat per client
             </div>
           </div>
-          <a href="#contact" className="btn-primary">Hai să lucrăm împreună</a>
+          <a href="#contact" className="btn-primary">Daca esti antreprenor, ai nevoie d eun Plan Strategic al afacerii sau de digitalizare</a>
         </div>
 
         <div className="about-right">
