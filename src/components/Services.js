@@ -34,12 +34,9 @@ const services = [
     short: 'Negociere pentru Antreprenori.',
     details: [
       'Curs Negociere Pentru Antreprenori',
-      'Curs Negociere Pentru Project Manageri',,
+      'Curs Negociere Pentru Project Manageri',
     ],
     tag: 'Recomandat',
-  },
-  {
-    
   },
   {
     icon: '📊',
