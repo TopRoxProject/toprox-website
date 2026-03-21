@@ -86,7 +86,7 @@ export default function Social() {
               </div>
               <div className="social-arrow">→</div>
               <div className="social-coming">
-                <span>Link în curând</span>
+                <span>Link</span>
               </div>
             </a>
           ))}
