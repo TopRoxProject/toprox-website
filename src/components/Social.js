@@ -12,7 +12,7 @@ const platforms = [
       </svg>
     ),
     color: '#1877f2',
-    link: '#', // va fi înlocuit
+    link: 'https://www.facebook.com/profile.php?id=100087336002775', // va fi înlocuit
   },
   {
     name: 'LinkedIn',
@@ -24,7 +24,7 @@ const platforms = [
       </svg>
     ),
     color: '#0a66c2',
-    link: '#',
+    link: 'https://www.linkedin.com/company/toprox-project-srl/?viewAsMember=true',
   },
   {
     name: 'Instagram',
