@@ -19,7 +19,7 @@ export default function About() {
             <span className="accent-red">la dispoziția ta</span>
           </h2>
           <p className="about-text">
-            <strong>TopRox Project SRL</strong> este o firmă de consultanță IT cu sediul în Sibiu, România.
+            <strong>TopRox Project SRL</strong> este o firmă de consultanță de Business, IT si GIS, cu sediul în Sibiu, România.
             Avem expertiză în implementarea de soluții GIS, Consultanta IT, Cursuri de Project Management, Negociere, soluții software.
           </p>
           <p className="about-text">
