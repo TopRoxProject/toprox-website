@@ -77,7 +77,7 @@ export default function Hero() {
       <div className="hero-glow blue" />
 
       <div className="hero-content">
-        <div className="hero-badge">Consultanță Business, GIS si IT · Sibiu, România</div>
+        <div className="hero-badge">Consultanță Business, GIS si IT · România</div>
         <h1 className="hero-title">
           Soluții IT<br />
           <span className="hero-title-accent">inteligente</span><br />
