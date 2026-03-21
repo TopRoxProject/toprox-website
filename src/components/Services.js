@@ -54,12 +54,9 @@ const services = [
   {
     icon: '🔧',
     color: 'blue',
-    title: 'Suport Tehnic',
-    short: 'Asistență tehnică rapidă și eficientă, la nevoie sau în abonament lunar.',
+    title: 'Suport Plan Strategic',
+    short: 'Revizuire Plan Strategic Realizat de Noi, pentru adaptare Plan Strategic.',
     details: [
-      'Help desk și suport remote',
-      'Întreținere sisteme și echipamente',
-      'Actualizări software și patch-uri de securitate',
       'Intervenție on-site în Sibiu și împrejurimi',
       'Rapoarte lunare de activitate',
     ],
