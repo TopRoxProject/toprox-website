@@ -37,7 +37,7 @@ const projects = [
   },
 ];
 
-const categories = ['Toate', 'Software propriu', 'Dezvoltare custom', 'Securitate', 'Infrastructură'];
+const categories = ['Toate', 'Software propriu', 'Dezvoltare custom'];
 
 export default function Portfolio() {
   const [filter, setFilter] = useState('Toate');
