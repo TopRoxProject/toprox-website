@@ -8,10 +8,11 @@
   --red-light: #F0C040;
   --blue: #B8860B;
   --blue-light: #D4A017;
-  --dark: #0A0F2C;
-  --dark-2: #0D1235;
-  --dark-3: #10163D;
-  --dark-4: #141C45;
+  --dark: #0A0F2C;       ← înlocuiește cu #05081A
+  --dark-2: #0D1235;     ← înlocuiește cu #070A20
+  --dark-3: #10163D;     ← înlocuiește cu #090D28
+  --dark-4: #141C45;     ← înlocuiește cu #0C1030
+}
   --text: #D4A017;
   --text-muted: #A07800;
   --border: rgba(212, 160, 23, 0.15);
