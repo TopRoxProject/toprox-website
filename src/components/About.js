@@ -40,7 +40,7 @@ export default function About() {
               Suport tehnic continuu, personalizat per client
             </div>
           </div>
-          <a href="#contact" className="btn-primary">Daca esti antreprenor, ai nevoie d eun Plan Strategic al afacerii sau de digitalizare</a>
+          <a href="#contact" className="btn-primary">Solicită un Plan Strategic</a>
         </div>
 
         <div className="about-right">
