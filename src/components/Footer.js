@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </a>
           <p className="footer-about">
-            Soluții IT complete pentru afacerea ta — de la conformitate GDPR și securitate
+            Soluții IT inteligente pentru afacerea ta — de la conformitate GDPR și securitate
             informatică, până la software personalizat și suport tehnic continuu.
           </p>
           <a href="mailto:toproxproject@gmail.com" className="footer-email">
