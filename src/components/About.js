@@ -5,7 +5,7 @@ const values = [
   { icon: '🛡️', title: 'Integritate', desc: 'Lucrăm transparent, fără costuri ascunse și fără compromisuri.' },
   { icon: '⚡', title: 'Rapiditate', desc: 'Livrăm soluții eficiente, respectând termenele agreate.' },
   { icon: '🔒', title: 'Securitate', desc: 'Datele tale sunt protejate conform standardelor GDPR și ISO.' },
-  { icon: '🤝', title: 'Parteneriat', desc: 'Suntem alături de tine pe termen lung, nu doar peparcursul proiectului.' },
+  { icon: '🤝', title: 'Parteneriat', desc: 'Suntem alături de tine pe termen lung, nu doar pe parcursul proiectului.' },
 ];
 
 export default function About() {
