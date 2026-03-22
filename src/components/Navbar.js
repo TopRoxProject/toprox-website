@@ -56,7 +56,9 @@ export default function Navbar({ scrolled }) {
           onClick={() => setOpen(!open)}
           aria-label="Meniu"
         >
-          <span /><span /><span />
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </nav>
