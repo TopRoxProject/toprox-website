@@ -1,0 +1,201 @@
+.gis-page {
+  padding-top: 80px;
+}
+
+.gis-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #0a0a0a 60%, #0d1b2a 100%);
+  min-height: 70vh;
+}
+
+.gis-hero-inner {
+  max-width: 580px;
+}
+
+.gis-hero-label {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.gis-hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.gis-hero-sub {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.gis-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gis-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gis-globe {
+  font-size: 10rem;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 40px rgba(59, 130, 246, 0.4));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+
+.gis-why {
+  padding: 80px 5%;
+  background: #0f0f0f;
+}
+
+.gis-why-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gis-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.gis-why-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.gis-why-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+}
+
+.gis-why-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gis-why-card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.gis-why-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.gis-services {
+  padding: 80px 5%;
+  background: #0a0a0a;
+}
+
+.gis-services-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gis-tools {
+  padding: 60px 5%;
+  background: #0f0f0f;
+}
+
+.gis-tools-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gis-tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.gis-tool-badge {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #3b82f6;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.gis-tool-badge:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+.gis-cta {
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #0d1b2a, #0a0a0a);
+  text-align: center;
+}
+
+.gis-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gis-cta h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.gis-cta p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .gis-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+  .gis-hero-actions {
+    justify-content: center;
+  }
+  .gis-globe {
+    font-size: 6rem;
+  }
+}
