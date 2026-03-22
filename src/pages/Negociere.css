@@ -105,6 +105,52 @@
   font-size: 0.85rem;
 }
 
+.neg-tabs-section {
+  padding: 40px 5%;
+  background: #0a0a0a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.neg-tabs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.neg-tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.neg-tab {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.neg-tab:hover {
+  border-color: #ef4444;
+  color: #fff;
+}
+
+.neg-tab.active.red {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.neg-tab.active.blue {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
 .neg-for {
   padding: 60px 5%;
   background: #0f0f0f;
@@ -141,8 +187,17 @@
   border-color: #ef4444;
 }
 
+.neg-for-item.blue:hover {
+  border-color: #3b82f6;
+}
+
 .check-red {
   color: #ef4444;
+  font-weight: 700;
+}
+
+.check-blue {
+  color: #3b82f6;
   font-weight: 700;
 }
 
@@ -178,6 +233,11 @@
   transform: translateY(-3px);
 }
 
+.neg-module-card.pm:hover,
+.neg-module-card.pm.active {
+  border-color: #3b82f6;
+}
+
 .neg-module-top {
   display: flex;
   align-items: center;
@@ -192,6 +252,11 @@
   background: rgba(239, 68, 68, 0.1);
   border-radius: 8px;
   padding: 4px 10px;
+}
+
+.neg-module-nr.pm {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .neg-module-icon {
@@ -250,6 +315,10 @@
   transform: translateY(-4px);
 }
 
+.neg-tool-card.pm:hover {
+  border-color: #3b82f6;
+}
+
 .neg-tool-top {
   display: flex;
   align-items: center;
@@ -284,6 +353,16 @@
   font-weight: 600;
 }
 
+.service-tag.blue {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 .neg-scenarii {
   padding: 80px 5%;
   background: #0a0a0a;
@@ -312,6 +391,10 @@
 .neg-scenariu-card:hover {
   border-color: #ef4444;
   transform: translateY(-4px);
+}
+
+.neg-scenariu-card.pm:hover {
+  border-color: #3b82f6;
 }
 
 .neg-scenariu-icon {
@@ -386,6 +469,10 @@
   color: #ef4444;
 }
 
+.accent-blue {
+  color: #3b82f6;
+}
+
 @media (max-width: 768px) {
   .neg-hero {
     flex-direction: column;
@@ -401,5 +488,8 @@
   .neg-hero-visual {
     width: 100%;
     max-width: 100%;
+  }
+  .neg-tabs {
+    flex-direction: column;
   }
 }
