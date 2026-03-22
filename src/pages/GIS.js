@@ -115,11 +115,7 @@ export default function GIS() {
           </div>
           <div className="services-grid">
             {gisServices.map((s, i) => (
-              <div
-                className={`service-card ${s.color} ${active === i ? 'active' : ''}`}
-                key={i}
-                onClick={() => setActive(active === i ? null : i)}
-              >
+              <div className={`service-card ${s.color} ${active === i ? 'active' : ''}`} key={i} onClick={() => setActive(active === i ? null : i)}>
                 <div className="service-top">
                   <span className="service-icon">{s.icon}</span>
                   <span className={`service-tag ${s.color}`}>{s.tag}</span>
@@ -149,7 +145,7 @@ export default function GIS() {
             </h2>
           </div>
           <div className="gis-tools-grid">
-            {['QGIS', 'ArcGIS', 'PostGIS', 'Python / PyQGIS', 'Google Earth Engine', 'OpenLayers'].map((tool, i) => (
+            {['QGIS', 'ArcGIS', 'Google Earth Engine'].map((tool, i) => (
               <div className="gis-tool-badge" key={i}>{tool}</div>
             ))}
           </div>
