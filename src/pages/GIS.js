@@ -59,7 +59,6 @@ export default function GIS() {
   return (
     <div className="gis-page">
 
-      {/* HERO */}
       <section className="gis-hero">
         <div className="gis-hero-inner">
           <div className="gis-hero-label">Servicii GIS</div>
@@ -80,7 +79,6 @@ export default function GIS() {
         </div>
       </section>
 
-      {/* DE CE GIS */}
       <section className="gis-why">
         <div className="gis-why-inner">
           <div className="section-header">
@@ -104,4 +102,68 @@ export default function GIS() {
         </div>
       </section>
 
-      {/* S
+      <section className="gis-services" id="gis-services">
+        <div className="gis-services-inner">
+          <div className="section-header">
+            <div className="section-label">Ce oferim</div>
+            <h2 className="section-title">
+              Cursuri & Consultanță <span className="accent-blue">GIS</span>
+            </h2>
+            <p className="section-sub">
+              De la primul pas în GIS până la soluții avansate pentru organizații.
+            </p>
+          </div>
+          <div className="services-grid">
+            {gisServices.map((s, i) => (
+              <div
+                className={`service-card ${s.color} ${active === i ? 'active' : ''}`}
+                key={i}
+                onClick={() => setActive(active === i ? null : i)}
+              >
+                <div className="service-top">
+                  <span className="service-icon">{s.icon}</span>
+                  <span className={`service-tag ${s.color}`}>{s.tag}</span>
+                </div>
+                <h3 className="service-title">{s.title}</h3>
+                <p className="service-short">{s.short}</p>
+                <ul className={`service-details ${active === i ? 'open' : ''}`}>
+                  {s.details.map((d, j) => (
+                    <li key={j}><span className="check">✓</span>{d}</li>
+                  ))}
+                </ul>
+                <button className="service-toggle">
+                  {active === i ? 'Mai puțin ↑' : 'Detalii ↓'}
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="gis-tools">
+        <div className="gis-tools-inner">
+          <div className="section-header">
+            <div className="section-label">Tehnologii</div>
+            <h2 className="section-title">
+              Instrumente cu care <span className="accent-blue">lucrăm</span>
+            </h2>
+          </div>
+          <div className="gis-tools-grid">
+            {['QGIS', 'ArcGIS', 'PostGIS', 'Python / PyQGIS', 'Google Earth Engine', 'OpenLayers'].map((tool, i) => (
+              <div className="gis-tool-badge" key={i}>{tool}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="gis-cta">
+        <div className="gis-cta-inner">
+          <h2>Vrei să înveți GIS sau ai nevoie de consultanță?</h2>
+          <p>Spune-ne despre proiectul tău și îți propunem soluția potrivită.</p>
+          <a href="#contact" className="btn-primary">Solicită o consultație gratuită</a>
+        </div>
+      </section>
+
+    </div>
+  );
+}
