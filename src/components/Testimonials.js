@@ -6,10 +6,7 @@ const testimonials = [
     name: 'Roberta G',
     role: 'Project Manager',
     company: 'Firmă Consultanta IT, Timisoara',
-    text: 'Cursul de Project Management sustinut de TopRoxProject a fost cea mai buna decizie pentru mine ca Project Manager la inceput e drum. 
-Intr-o piata suprasaturata de training-uri care deseori te pregatesc mai degraba pentru examenul de la final, acest curs m-a pregatit pentru realitatea din teren, aratandu-mi ce se intampla cu adevarat in culisele domeniului. 
-Cursul mi-a construit o baza solida si structurata, m-am invatat sa recunosc din timp anumite fenomene specifice si mi-a oferit resurse si bune practici aplicabile imediat in proiectele mele.
-Atmosfera prietenoasa si trainerul exceptional au facut acest curs sa se simta ca o serie de discutii cu un mentor foarte bine pregatit, cu experienta vasta care spune lucrurilor pe nume fara sa te descurajeze astfel incat tu ai parte de cea mai buna pregatire posibila la linia de start in acest rol.',
+    text: 'Cursul de Project Management sustinut de TopRoxProject a fost cea mai buna decizie pentru mine ca Project Manager la inceput e drum. Intr-o piata suprasaturata de training-uri care deseori te pregatesc mai degraba pentru examenul de la final, acest curs m-a pregatit pentru realitatea din teren, aratandu-mi ce se intampla cu adevarat in culisele domeniului. Cursul mi-a construit o baza solida si structurata, m-am invatat sa recunosc din timp anumite fenomene specifice si mi-a oferit resurse si bune practici aplicabile imediat in proiectele mele.Atmosfera prietenoasa si trainerul exceptional au facut acest curs sa se simta ca o serie de discutii cu un mentor foarte bine pregatit, cu experienta vasta care spune lucrurilor pe nume fara sa te descurajeze astfel incat tu ai parte de cea mai buna pregatire posibila la linia de start in acest rol.',
     rating: 5,
     initial: 'R',
   },
