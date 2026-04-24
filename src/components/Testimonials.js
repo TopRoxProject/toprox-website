@@ -10,14 +10,7 @@ const testimonials = [
     rating: 5,
     initial: 'R',
   },
-  {
-    name: 'Maria Constantin',
-    role: 'Administrator',
-    company: 'Clinică medicală, Sibiu',
-    text: 'Am colaborat pentru un audit de securitate IT și am rămas impresionată de profesionalism. Au identificat probleme pe care nu le știam că există și au rezolvat totul rapid și discret.',
-    rating: 5,
-    initial: 'A',
-  },
+
   {
     name: 'Radu Ionescu',
     role: 'CTO',
@@ -26,14 +19,7 @@ const testimonials = [
     rating: 5,
     initial: 'R',
   },
-  {
-    name: 'Elena Popa',
-    role: 'Manager Operațional',
-    company: 'Distribuție, Brașov',
-    text: 'Migrarea pe cloud părea complicată, dar echipa TopRox a gestionat totul impecabil. Acum avem backup automat, costuri mai mici și liniște. Nu mai stăm cu grija că pierdem date.',
-    rating: 5,
-    initial: 'E',
-  },
+
 ];
 
 export default function Testimonials() {
