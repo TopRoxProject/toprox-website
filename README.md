@@ -1,111 +1,40 @@
-# TopRox Project SRL – Website
+# TopRox Project SRL – website
 
-Website oficial TopRox Project SRL, construit în React.
+Site multilingv (română, engleză, germană, italiană, franceză), construit în React și publicat pe Netlify.
 
-## 🚀 Deploy pe Netlify via GitHub
+## Unde se modifică textele
 
-### Pasul 1 – Adaugă logo-ul
-Copiază fișierul `Logo_TopRoxProject_transparent_1.png` în:
-```
-public/images/logo.png
-```
+Tot conținutul e în `src/i18n/`, câte un fișier pe limbă:
 
-### Pasul 2 – Inițializează Git local
-```bash
-git init
-git add .
-git commit -m "Initial commit – TopRox Website"
-```
+| Fișier | Limba |
+|---|---|
+| `ro.js` | română (limba principală) |
+| `en.js` | engleză |
+| `de.js` | germană |
+| `it.js` | italiană |
+| `fr.js` | franceză |
 
-### Pasul 3 – Creează repo pe GitHub
-1. Mergi pe [github.com](https://github.com) → **New repository**
-2. Numește-l `toprox-website` (sau orice alt nume)
-3. Nu bifa README / .gitignore (le avem deja)
-4. Apasă **Create repository**
+Când schimbați un text în română, schimbați-l și în celelalte patru fișiere. Toate au aceeași structură.
+Comanda `node scripts/check-translations.js` verifică dacă vreo limbă are câmpuri lipsă.
 
-### Pasul 4 – Push pe GitHub
-```bash
-git remote add origin https://github.com/USERNAME/toprox-website.git
-git branch -M main
-git push -u origin main
-```
+Adresele paginilor în fiecare limbă sunt în `src/i18n/config.js`.
 
-### Pasul 5 – Conectează Netlify
-1. Mergi pe [app.netlify.com](https://app.netlify.com)
-2. **Add new site** → **Import an existing project** → **GitHub**
-3. Selectează repo-ul `toprox-website`
-4. Setările de build sunt detectate automat din `netlify.toml`:
-   - Build command: `npm run build`
-   - Publish directory: `build`
-5. Apasă **Deploy site**
+## Cum se publică
 
-### Pasul 6 – Domeniu propriu
-1. În Netlify → **Domain settings** → **Add custom domain**
-2. Introdu domeniul tău (ex: `toproxproject.ro`)
-3. Urmează instrucțiunile DNS (sunt deja configurate dacă ai setat domeniul anterior)
+Netlify rulează `npm run build`, care:
 
----
+1. construiește aplicația React;
+2. rulează `scripts/prerender.js`, care scrie câte o pagină HTML completă pentru fiecare limbă
+   (titlu, descriere, adrese hreflang, date structurate pentru Google), plus `404.html`,
+   `sitemap.xml` și `robots.txt`.
 
-## 🔗 Social Media – Actualizare linkuri
-Deschide fișierul `src/components/Social.js` și înlocuiește `href: '#'` cu linkurile reale:
+`netlify.toml` leagă fiecare adresă de fișierul ei. Adresele inexistente primesc pagina 404 cu status 404.
 
-```js
-link: 'https://facebook.com/TopRoxProject',
-link: 'https://linkedin.com/company/toprox-project',
-link: 'https://instagram.com/toproxproject',
-link: 'https://youtube.com/@TopRoxProject',
-```
+## Ce respectă site-ul
 
-Apoi fă un nou commit și push — Netlify va redeploya automat.
-
----
-
-## 📬 Formular de contact – Netlify Forms
-Formularul folosește **Netlify Forms** (gratuit, inclus în Netlify).
-Mesajele primite vor apărea în Netlify Dashboard → **Forms**.
-Poți activa notificări pe email din **Forms → Form notifications**.
-
----
-
-## 🛠️ Development local
-```bash
-npm install
-npm start
-```
-
-## 📦 Build pentru producție
-```bash
-npm run build
-```
-
----
-
-## 📁 Structura proiectului
-```
-toprox-website/
-├── public/
-│   ├── index.html
-│   └── images/
-│       └── logo.png          ← adaugă logo-ul aici!
-├── src/
-│   ├── components/
-│   │   ├── Navbar.js / .css
-│   │   ├── Hero.js / .css
-│   │   ├── About.js / .css
-│   │   ├── Services.js / .css
-│   │   ├── Portfolio.js / .css
-│   │   ├── Testimonials.js / .css
-│   │   ├── Social.js / .css
-│   │   ├── Contact.js / .css
-│   │   └── Footer.js / .css
-│   ├── App.js / .css
-│   ├── index.js
-│   └── index.css
-├── netlify.toml
-├── package.json
-└── .gitignore
-```
-
----
-
-*© 2026 TopRox Project SRL · toproxproject@gmail.com · Sibiu, România*
+- **SEO:** fiecare pagină are conținutul deja în HTML, titlu și descriere proprii, adresă canonică,
+  legături hreflang între cele 5 limbi, sitemap multilingv și date structurate schema.org.
+- **Accesibilitate:** WCAG 2.1 nivel AA / EN 301 549 (Directiva (UE) 2019/882, Legea 232/2022).
+  Verificat cu axe-core pe toate cele 31 de pagini, fără erori.
+- **GDPR:** fără cookie-uri și fără instrumente de urmărire; fonturile sunt găzduite pe site
+  (pachetele `@fontsource-variable/inter` și `@fontsource-variable/plus-jakarta-sans`), nu la Google.
