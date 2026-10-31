@@ -1,6 +1,6 @@
 # TopRox Project SRL – website
 
-Site multilingv (română, engleză, germană, italiană, franceză), construit în React și publicat pe Netlify.
+Site multilingv (română, engleză, germană, italiană, franceză), construit în React și publicat pe Cloudflare Pages.
 
 ## Unde se modifică textele
 
@@ -21,14 +21,14 @@ Adresele paginilor în fiecare limbă sunt în `src/i18n/config.js`.
 
 ## Cum se publică
 
-Netlify rulează `npm run build`, care:
+Cloudflare Pages rulează `npm run build` (director de ieșire: `build`, Node 20 din `.node-version`), care:
 
 1. construiește aplicația React;
 2. rulează `scripts/prerender.js`, care scrie câte o pagină HTML completă pentru fiecare limbă
    (titlu, descriere, adrese hreflang, date structurate pentru Google), plus `404.html`,
    `sitemap.xml` și `robots.txt`.
 
-`netlify.toml` leagă fiecare adresă de fișierul ei. Adresele inexistente primesc pagina 404 cu status 404.
+Cloudflare servește fiecare adresă din fișierul ei (de exemplu `/en/solutions` din `en/solutions.html`). Adresele inexistente primesc `404.html` cu status 404. Antetele de securitate sunt în `public/_headers`.
 
 ## Ce respectă site-ul
 
