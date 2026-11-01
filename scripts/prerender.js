@@ -65,13 +65,13 @@ function structured(lang, page) {
     publisher: { '@id': ORG_ID }, inLanguage: LANGS.map(l => LANG_META[l].htmlLang),
   });
   const webPage = {
-    '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: t.seo[page].title,
+    '@type': page === 'about' ? 'AboutPage' : 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: t.seo[page].title,
     description: t.seo[page].description, inLanguage: LANG_META[lang].htmlLang,
     isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': ORG_ID },
   };
   graph.push(webPage);
   if (page !== 'home') {
-    const names = { solutions: t.common.nav.solutions, gis: t.common.nav.gisCourses, negotiation: t.common.nav.negotiation, privacy: t.common.footer.privacy, accessibility: t.common.footer.accessibility };
+    const names = { solutions: t.common.nav.solutions, gis: t.common.nav.gisCourses, negotiation: t.common.nav.negotiation, about: t.common.nav.about, privacy: t.common.footer.privacy, accessibility: t.common.footer.accessibility };
     graph.push({
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -86,6 +86,9 @@ function structured(lang, page) {
     const services = [
       ...s.items.map(i => ({ name: i.title, description: i.intro, url: `${pageUrl}#${i.id}` })),
       { name: s.cat2.subtitle, description: s.cat2.desc, url: `${pageUrl}#cimitire` },
+      ...s.env.map(f => ({ name: f.title, description: f.intro, url: `${pageUrl}#${f.id}` })),
+      { name: s.cat4.title, description: s.cat4.desc, url: `${pageUrl}#mentenanta` },
+      ...s.cat5.items.map(f => ({ name: f.title, description: f.intro, url: `${pageUrl}#${f.id}` })),
       ...s.any.focus.map(f => ({ name: f.title, description: f.intro, url: `${pageUrl}#orice-domeniu` })),
     ];
     graph.push({
@@ -168,7 +171,7 @@ const nfHead = `<title>${esc(DICTS.ro.seo.notFound.title)}</title><meta name="ro
 fs.writeFileSync(path.join(BUILD, '404.html'), fill(template, { lang: 'ro', headHtml: nfHead, body: render('ro', null), notFound: true }));
 
 // Sitemap cu toate limbile (hreflang în sitemap)
-const PRIORITY = { home: '1.0', solutions: '0.9', gis: '0.8', negotiation: '0.8', privacy: '0.3', accessibility: '0.3' };
+const PRIORITY = { home: '1.0', solutions: '0.9', gis: '0.8', negotiation: '0.8', about: '0.7', privacy: '0.3', accessibility: '0.3' };
 const urls = [];
 for (const page of PAGES) {
   for (const lang of LANGS) {
