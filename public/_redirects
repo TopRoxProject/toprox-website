@@ -1,0 +1,8 @@
+# Adrese vechi -> paginile actuale (redirecționare permanentă, pentru Google)
+/contact-us      /#contact          301
+/contact         /#contact          301
+/about-us        /despre-noi        301
+/about           /despre-noi        301
+/services        /solutii           301
+/servicii        /solutii           301
+/en/contact-us   /en/#contact       301
